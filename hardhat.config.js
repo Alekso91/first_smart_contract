@@ -1,3 +1,4 @@
+
 require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -13,9 +14,20 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
 module.exports = {
   solidity: "0.8.4",
 };
+
+/*
+require('@nomiclabs/hardhat-waffle');
+
+module.exports = {
+  solidity: '0.8.0',
+  networks: {
+    rinkeby: {
+      url: '',
+      accounts: [''],
+    },
+  },
+};
+*/
